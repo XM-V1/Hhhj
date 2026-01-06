@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>1-sahifa</title>
+</head>
+<body>
+
+  <!-- LOGO (o‘zing rasm qo‘yasan) -->
+  <img src="logo.png" alt="Logo" width="120"><br><br>
+
+  <h2>Maʼlumotlarni kiriting</h2>
+
+  <input type="text" id="qator1" placeholder="Ism"><br><br>
+  <input type="text" id="qator2" placeholder="Familiya"><br><br>
+  <input type="text" id="qator3" placeholder="Telefon"><br><br>
+  <input type="text" id="qator4" placeholder="Shahar"><br><br>
+
+  <button onclick="tasdiqlash()">Tasdiqlash</button>
+
+  <script>
+    function tasdiqlash() {
+      let q1 = document.getElementById("qator1").value;
+      let q2 = document.getElementById("qator2").value;
+      let q3 = document.getElementById("qator3").value;
+      let q4 = document.getElementById("qator4").value;
+
+      if (q1 === "" || q2 === "" || q3 === "" || q4 === "") {
+        alert("Iltimos barcha qatorlarni to‘ldiring!");
+      } else {
+        window.location.href = "keyingi.html";
+      }
+    }
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>2-sahifa</title>
+</head>
+<body>
+
+  <h2>Qo‘shimcha maʼlumot</h2>
+
+  <input type="number" id="yosh" placeholder="Yoshingiz"><br><br>
+
+  <button onclick="tekshir()">Tasdiqlash</button>
+
+  <script>
+    function tekshir() {
+      let yosh = document.getElementById("yosh").value;
+
+      if (yosh === "") {
+        alert("Yoshni kiriting!");
+      } else {
+        alert("Maʼlumotlar qabul qilindi ✅");
+      }
+    }
+  </script>
+
+</body>
+</html>
